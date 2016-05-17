@@ -62,8 +62,13 @@ var App = React.createClass({
         <Notifier>
           <UserAuth>  
             <div>
-              <ButtonBar setActiveComponent={ this.setActiveComponent } getActiveComponent= { this.getActiveComponent } />
-              {this.showWhichComponent()}
+              <div>
+                <NavBar />
+              </div>
+              <div>
+                <ButtonBar setActiveComponent={ this.setActiveComponent } getActiveComponent= { this.getActiveComponent } />
+                {this.showWhichComponent()}
+              </div>
             </div>
           </UserAuth> 
         </Notifier> 

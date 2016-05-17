@@ -21,11 +21,8 @@ var ButtonBar = React.createClass({
 	      });
 
       return (
-      
-          <div className="container">
-          	<div className="btn-group button-bar" role="group" aria-label="Basic example">
+          <div className="btn-group button-bar" role="group" aria-label="Basic example">
 					  {linkList}
-						</div>
 					</div>
           )
     }

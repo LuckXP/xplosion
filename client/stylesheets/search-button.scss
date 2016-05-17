@@ -1,14 +1,8 @@
-.button-bar-inactive {
-	display: flex;
-	flex-grow: 1;
-	justify-content: center;
+.search-button {
 	color: white;
 	border-radius: 10px;
 	font-variant: small-caps;
-	font-size: 1rem;
-	margin-top: 1rem;
-	padding: .8rem;
-
+	font-size: .8rem;
 	background-image: linear-gradient(180deg, #E61052, #F93973);
 
 	&:hover {

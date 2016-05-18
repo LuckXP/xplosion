@@ -3,7 +3,7 @@ var React = require('react');
 var Home = React.createClass({
     render: function() {
         return (
-						<div className="col-sm-8 m-b-1">
+						<div className="col-sm-8 p-l-0 m-b-1">
 							<div className="jumbotron">
 							  <h1 className="display-3">😭welcome to HOme😭</h1>
 							  <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>

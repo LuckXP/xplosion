@@ -9,6 +9,11 @@ var OurProducts = require('./our-products');
 var AboutUs = require('./about-us');
 var WhereToBuy = require('./where-to-buy');
 var ContactUs = require('./contact-us');
+var RandomCard = require('./random-card');
+var ContactCard = require('./contact-card');
+var SociCard = require('./soci-card');
+var Carousel = require('./carousel');
+
 var Blog = require('./blogComp/blog.js');
 var BlogList = require('./blogComp/blogList.js');
 
@@ -68,6 +73,12 @@ var App = React.createClass({
               <div>
                 <ButtonBar setActiveComponent={ this.setActiveComponent } getActiveComponent= { this.getActiveComponent } />
                 {this.showWhichComponent()}
+                <SociCard />
+                <RandomCard />
+                <ContactCard />
+              </div>
+              <div>
+                <Carousel />
               </div>
             </div>
           </UserAuth> 

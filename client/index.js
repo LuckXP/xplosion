@@ -13,6 +13,9 @@ var RandomCard = require('./random-card');
 var ContactCard = require('./contact-card');
 var SociCard = require('./soci-card');
 var Carousel = require('./carousel');
+var ProductsExpansionCard = require('./products-expansion.js');
+var Footer = require('./footer.js');
+
 
 var Blog = require('./blogComp/blog.js');
 var BlogList = require('./blogComp/blogList.js');
@@ -79,6 +82,10 @@ var App = React.createClass({
               </div>
               <div>
                 <Carousel />
+                <ProductsExpansionCard />
+              </div>
+              <div>
+                <Footer />
               </div>
             </div>
           </UserAuth> 

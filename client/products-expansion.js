@@ -3,7 +3,8 @@ var React = require('react');
 var ProductsExpansionCard = React.createClass({
     render: function() {
         return (
-            <div className="card col-sm-8"> 
+          <div className="col-sm-8 p-l-0 m-b-1">  
+            <div className="card"> 
 							  <div className="card-header">
 							    <row>
 							    	<div>
@@ -20,7 +21,8 @@ var ProductsExpansionCard = React.createClass({
 						    <a href="#" className="btn btn-primary">Go somewhere</a>
 						  </div>
 						</div>
-            )
+					</div>
+          )
     }
 
 });

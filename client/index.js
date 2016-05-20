@@ -75,14 +75,20 @@ var App = React.createClass({
               </div>
               <div>
                 <ButtonBar setActiveComponent={ this.setActiveComponent } getActiveComponent= { this.getActiveComponent } />
-                {this.showWhichComponent()}
-                <SociCard />
-                <RandomCard />
-                <ContactCard />
               </div>
-              <div>
-                <Carousel />
-                <ProductsExpansionCard />
+              <div className="container row">
+                <div className="column-right">
+                  <div className="p-r-2 m-b-1">
+                    {this.showWhichComponent()}
+                  </div>
+                  <Carousel />
+                  <ProductsExpansionCard />
+                </div>
+                <div className="column-right">
+                  <SociCard />
+                  <RandomCard />
+                  <ContactCard />
+                </div>
               </div>
               <div>
                 <Footer />

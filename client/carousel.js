@@ -3,7 +3,7 @@ var React = require('react');
 var Carousel = React.createClass({
     render: function() {
         return (
-          <div className="col-sm-8 p-l-0 m-b-1">  
+          <div className="p-r-2 m-b-1">  
             <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
 						  <ol className="carousel-indicators">
 						    <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>

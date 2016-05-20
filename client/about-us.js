@@ -3,7 +3,6 @@ var React = require('react');
 var AboutUs = React.createClass({
     render: function() {
         return (
-					<div className="col-sm-8 p-l-0 m-b-1">
 						<div className="jumbotron">
 						  <h1 className="display-3">😭welcome to About us😭</h1>
 						  <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -14,7 +13,6 @@ var AboutUs = React.createClass({
 						    <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 						  </p>
 						</div>
-					</div>
             )
     }
 

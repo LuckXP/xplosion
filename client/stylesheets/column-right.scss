@@ -1,1 +1,4 @@
-.column-right 
+.column-right {
+	display: flex;
+	flex-direction: column;
+}

@@ -2,8 +2,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var NavBar = require('./navbar');
 var ButtonBar = require('./button-bar');
-var Notifier = require('./notifier');
-var UserAuth = require('./userAuth')
 var Home = require('./home');
 var OurProducts = require('./our-products');
 var AboutUs = require('./about-us');
@@ -65,37 +63,31 @@ var App = React.createClass({
     }
   },
   render: function() {
-    return (
+    return ( 
       <div>
-        <Notifier>
-          <UserAuth>  
-            <div>
-              <div>
-                <NavBar />
-              </div>
-              <div>
-                <ButtonBar setActiveComponent={ this.setActiveComponent } getActiveComponent= { this.getActiveComponent } />
-              </div>
-              <div className="container row">
-                <div className="column-right">
-                  <div className="p-r-2 m-b-1">
-                    {this.showWhichComponent()}
-                  </div>
-                  <Carousel />
-                  <ProductsExpansionCard />
-                </div>
-                <div className="column-right">
-                  <SociCard />
-                  <RandomCard />
-                  <ContactCard />
-                </div>
-              </div>
-              <div>
-                <Footer />
-              </div>
+        <div>
+          <NavBar />
+        </div>
+        <div>
+          <ButtonBar setActiveComponent={ this.setActiveComponent } getActiveComponent= { this.getActiveComponent } />
+        </div>
+        <div className="container row">
+          <div className="column-right">
+            <div className="p-r-2 m-b-1">
+              {this.showWhichComponent()}
             </div>
-          </UserAuth> 
-        </Notifier> 
+            <Carousel />
+            <ProductsExpansionCard />
+          </div>
+          <div className="column-right">
+            <SociCard />
+            <RandomCard />
+            <ContactCard />
+          </div>
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
       )
   }

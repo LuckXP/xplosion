@@ -3,8 +3,6 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var router = express.Router();
-var blogPostRouter = require('./routes/blogposts');
-var BlogPost = require('./models/blogpost');
 var flash = require('connect-flash');
 var session = require('express-session');
 
@@ -38,6 +36,10 @@ app.use(flash());
 
 // routes ======================================================================
 
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 var port = process.env.PORT || 8080;
 

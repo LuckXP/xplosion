@@ -8,8 +8,13 @@ var RandomCard = React.createClass({
 						    randomly selected
 						  </div>
 						  <div className="card-block">
-						    <h4 className="card-title">Card title</h4>
-						    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+						    <ul className="card-text">
+						    	<li>X-Plosion is a hit in Japan</li>
+						    	<li>3 new flavors added</li>
+						    	<li>Check out our new promo on YouTube</li>
+						    	<li> We say NP to artifical flavors</li>
+						    	<li>X-plosion and your health</li>
+						    </ul>
 						  </div>
 						</div>
             )
